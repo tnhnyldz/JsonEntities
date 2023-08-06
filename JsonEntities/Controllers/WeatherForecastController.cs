@@ -110,6 +110,8 @@ namespace JsonEntities.Controllers
             context.Products.Add(p1);
             context.SaveChanges();
 
+            var variable=context.Products.Where(x=>x.Id==1).FirstOrDefault();
+        
 
 
 
